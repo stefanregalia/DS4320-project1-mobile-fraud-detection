@@ -70,6 +70,8 @@ def create_accounts(df):
         recipients = pd.DataFrame({'account_id': df['nameDest'].unique()})
         # Combine sender and recipient IDs, removing duplicates
         accounts = pd.concat([senders, recipients]).drop_duplicates()
+        # Remove corrupted rows that do not follow the C/M prefix format
+        accounts = accounts[accounts['account_id'].str.match(r'^[CM]\d+$')]
         accounts['account_type'] = accounts['account_id'].apply(
             lambda x: 'merchant' if x.startswith('M') else 'customer'
         )
