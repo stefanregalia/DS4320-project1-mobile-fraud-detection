@@ -1,0 +1,13 @@
+2026-03-18 12:42:25,780 - INFO - Loading raw data from data/raw/PS_20174392719_1491204439457_log 2.csv
+2026-03-18 12:42:31,714 - INFO - Loaded 6362620 rows
+2026-03-18 12:42:31,717 - INFO - Dropped leaky columns: ['oldbalanceOrg', 'newbalanceOrig', 'oldbalanceDest', 'newbalanceDest']
+2026-03-18 12:42:31,799 - INFO - Engineered features: is_merchant, hour_of_day, day_of_month
+2026-03-18 12:42:31,864 - INFO - Created transaction_types table with 5 rows
+2026-03-18 12:42:36,455 - INFO - Created accounts table with 9073900 rows
+2026-03-18 12:42:36,490 - INFO - Created time_steps table with 743 rows
+2026-03-18 12:42:37,141 - INFO - Created transactions table with 6362620 rows
+2026-03-18 12:42:48,471 - INFO - Saved transactions to data/relational/transactions.csv and data/relational/transactions.parquet
+2026-03-18 12:42:52,861 - INFO - Saved accounts to data/relational/accounts.csv and data/relational/accounts.parquet
+2026-03-18 12:42:52,862 - INFO - Saved transaction_types to data/relational/transaction_types.csv and data/relational/transaction_types.parquet
+2026-03-18 12:42:52,864 - INFO - Saved time_steps to data/relational/time_steps.csv and data/relational/time_steps.parquet
+2026-03-18 12:42:52,864 - INFO - All tables created successfully
