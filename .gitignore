@@ -1,3 +1,4 @@
 fraud/
 data/raw/
 data/
+*.log
