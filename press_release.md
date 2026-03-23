@@ -13,4 +13,4 @@ Mobile payment platforms, such as Venmo and Zelle, process millions of transacti
 To solve this problem, we built a machine learning model to classify transactions as fraudulent (1) or non-fraudulent (0). To do so, the model analyzes each transaction's type, amount, type of recipient, time of day, and day of the month. The model estimates the probability of a transaction being fraudulent, and if that probability is over a defined threshold, it is flagged as fraudulent and sent for manual review. As shown in the chart below, fraudulent transaction rates vary by transaction type, with "Transfer" showing the highest fraud rate at roughly 0.33%. This helps the model classify mobile payment fraud.
 
 ## Chart
-![Fraud Rate by Transaction Type](image.png)
+![Fraud Rate by Transaction Type](visualizations/image.png)
