@@ -42,9 +42,6 @@ The motivation behind this project is to detect fraudulent mobile money transact
 
 This project lives at the intersection between the domains of financial technology, mobile payment systems, and machine learning. Mobile payment systems, such as Venmo and Zelle, are platforms where people can send money to others directly through their phones. Financial technology companies that run these platforms implement systems to track millions of these mobile transactions every day, which would be impossible to do manually. Machine learning solves this problem by identifying patterns in fraudulent activity so that these companies can mitigate fraud and take as many preventative actions as possible.
 
-Link to Google Drive Folder with articles:
-
-https://drive.google.com/drive/folders/1DJX2ydABfxP4MmT6pTRmrynw6SaiV1Qn?usp=sharing
 
 | Title | Description | Link |
 |-------|-------------|------|
