@@ -72,7 +72,7 @@ The use of synthetic data introduces uncertainty regarding how well the model wi
 
 ## Metadata
 
-![ER Diagram](visualizations/image-1.png)
+![ER Diagram](visualizations/erd.png)
 
 | Table | Description | Link |
 |-------|-------------|------|
