@@ -6,11 +6,12 @@ Tens of thousands of fraudulent mobile transactions occur every day, compromisin
 
 ## Problem Statement
 
-Mobile payment platforms, such as Venmo and Zelle, process millions of transactions daily, and identifying fraudulent transactions manually is an impossible task. Fraudulent transactions can follow similar patterns, such as unusually large transaction amounts or common transaction types. We attempt to identify these patterns and create a model to classify transactions as fraudulent or not fraudulent based on transaction type, amount, whether the recipient is the merchant or customer, the hour of the day, and the day of the month.
+Mobile payment platforms, such as Venmo and Zelle, process millions of transactions daily. These transactions consist of sending money to friends, shopping online, paying bills, and much more. Fraudsters are also using these platforms, stealing money from users, and by the time people realize it, the money is gone. Bank account transfers and cash-outs are the most common attack methods, and financial institutions currently struggle to catch them before the damage is done to users.
 
 ## Solution Description
 
-To solve this problem, we built a machine learning model to classify transactions as fraudulent (1) or non-fraudulent (0). To do so, the model analyzes each transaction's type, amount, type of recipient, time of day, and day of the month. The model estimates the probability of a transaction being fraudulent, and if that probability is over a defined threshold, it is flagged as fraudulent and sent for manual review. As shown in the chart below, fraudulent transaction rates vary by transaction type, with "Transfer" showing the highest fraud rate at roughly 0.33%. This helps the model classify mobile payment fraud.
+To solve this problem, we developed a system that automatically flags suspicious transactions before they are processed, allowing banks and payment platforms enough time to manually review them. When the system reviews a transaction, it examines its size, type, identity of the customer and merchant, and the time of day and month. It learns trends in fraudulent activity, and detects unusual, unique transaction activity so that humans can take a closer look. As shown in the chart below, certain transaction types like transfers carry a much higher fraud rate than others, making them a key signal for catching fraud early. With this kind of early warning system in place, financial institutions can protect their customers before money changes hands rather than after.
 
 ## Chart
-![Fraud Rate by Transaction Type](visualizations/image.png)
+![Fraud Rate by Transaction Type](visualizations/chart.png)
+*Figure 1: Fraud rate by transaction type in the PaySim dataset. Transfer transactions show the highest fraud rate at approximately 0.77%, making transaction type a key predictor for fraud detection.*
