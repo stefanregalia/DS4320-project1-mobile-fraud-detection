@@ -81,7 +81,7 @@ The use of synthetic data introduces uncertainty regarding how well the model wi
 | transaction_types | Lookup table mapping transaction type IDs to their names | [transaction_types.csv](https://myuva-my.sharepoint.com/:x:/g/personal/xtm9px_virginia_edu/IQCzlkqJ26QoRbcpZabk3FiIAYTGX_vY4lZJ4ZaSvdIjdck?email=stefanregalia%40gmail.com&e=g65NyD) |
 | time_steps | Dimension table mapping each simulation hour to its hour of day and day of month | [time_steps.csv](https://myuva-my.sharepoint.com/:x:/g/personal/xtm9px_virginia_edu/IQAl0lzioXyRSaT1drg4fR5wAQbtSImkQNXLoenYpQPSQCQ?email=stefanregalia%40gmail.com&e=tPGs6v) |
 
-All project data can be found here: https://myuva-my.sharepoint.com/:f:/g/personal/xtm9px_virginia_edu/IgCoK6DBYXegSqoNcsr_CHx4ARM2WIf5gcOg3Dr6DDuTZOY?e=aHUC8N
+All relational data can be found here: https://myuva-my.sharepoint.com/:f:/g/personal/xtm9px_virginia_edu/IgCoK6DBYXegSqoNcsr_CHx4ARM2WIf5gcOg3Dr6DDuTZOY?e=aHUC8N
 
 | Name | Data Type | Description | Example |
 |------|-----------|-------------|---------|
