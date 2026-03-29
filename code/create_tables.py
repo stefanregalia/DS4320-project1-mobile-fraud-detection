@@ -8,7 +8,7 @@ import os
 
 # Configure logging to track progress and errors during table creation
 logging.basicConfig(
-    filename='create_tables.log',
+    filename='../.logs/create_tables.log',
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
