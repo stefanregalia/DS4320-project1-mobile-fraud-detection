@@ -24,31 +24,7 @@ DS4320-project1-mobile-fraud-detection/
 
 ## How to Run
 
-**Prerequisites:** Python 3.13 and the following packages:
-```bash
-pip install -r requirements.txt
-brew install libomp  # Mac only, required for XGBoost
-```
-
-**Step 1 — Clone the repository:**
-```bash
-git clone https://github.com/stefanregalia/DS4320-project1-mobile-fraud-detection.git
-cd DS4320-project1-mobile-fraud-detection
-```
-
-**Step 2 — Download the raw data:**
-Download the PaySim dataset from https://www.kaggle.com/datasets/ealaxi/paysim1. Inside the downloaded zip folder you will find a CSV file named `PS_20174392719_1491204439457_log 2.csv`. Create a folder called `data/raw/` in the repo root and place the CSV file inside it.
-
-**Step 3 — Install dependencies and build the relational tables:**
-From the repo root:
-```bash
-pip install -r requirements.txt
-python code/create_tables.py
-```
-This will generate all relational tables as CSV and parquet files in `data/relational/`.
-
-**Step 4 — Run the pipeline:**
-Open `code/pipeline_files/pipeline.ipynb` and run all cells from top to bottom. Make sure your working directory is set to the repo root, not the `pipeline_files/` folder, otherwise the relative file paths will not resolve correctly.
+Download the PaySim dataset from https://www.kaggle.com/datasets/ealaxi/paysim1 and place the CSV in `data/raw/`. Update the `raw_path` variable in `code/create_tables.py` to match your filename. Then run `create_tables.py` from the repo root to generate the relational tables, and open `code/pipeline_files/pipeline.ipynb` to run the full pipeline.
 
 ## Problem Definition
 
