@@ -8,7 +8,7 @@ import os
 
 # Configure logging to track progress and errors during table creation
 logging.basicConfig(
-    filename='../.logs/create_tables.log',
+    filename='.logs/create_tables.log',
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
@@ -129,6 +129,9 @@ def save_table(df, name, output_dir):
         raise
 
 def main():
+    os.makedirs('data/raw', exist_ok=True)
+    os.makedirs('data/relational', exist_ok=True)
+    os.makedirs('.logs', exist_ok=True)
     raw_path = 'data/raw/PS_20174392719_1491204439457_log 2.csv'
     output_dir = 'data/relational'
 

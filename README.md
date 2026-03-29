@@ -1,5 +1,53 @@
 # DS4320-project1-mobile-fraud-detection
 
+## Repository Structure
+```
+DS4320-project1-mobile-fraud-detection/
+├── README.md
+├── press_release.md
+├── background_reading/          # Background reading articles
+├── code/
+│   ├── create_tables.py         # Builds relational tables from raw data
+│   └── pipeline_files/
+│       ├── pipeline.ipynb       # Full analysis pipeline
+│       ├── pipeline.md          # Markdown export of pipeline
+│       ├── confusion_matrix.png # Model results visualization
+│       └── correlation_heatmap.png # EDA correlation heatmap
+├── visualizations/
+│   ├── chart.png                # Press release chart
+│   └── erd.png                  # ER diagram
+└── data/                        # Gitignored: need to download (linked below)
+    ├── raw/                     # Raw PaySim CSV
+    └── relational/              # Relational tables (CSV and parquet)
+```
+
+## How to Run
+
+**Prerequisites:** Python 3.13 and the following packages:
+```bash
+pip install pandas duckdb scikit-learn xgboost seaborn matplotlib
+brew install libomp  # Mac only, required for XGBoost
+```
+
+**Step 1 — Clone the repository:**
+```bash
+git clone https://github.com/stefanregalia/DS4320-project1-mobile-fraud-detection.git
+cd DS4320-project1-mobile-fraud-detection
+```
+
+**Step 2 — Download the raw data:**
+Download the PaySim dataset from https://www.kaggle.com/datasets/ealaxi/paysim1. Inside the downloaded zip folder you will find a CSV file named `PS_20174392719_1491204439457_log 2.csv`. Create a folder called `data/raw/` in the repo root and place the CSV file inside it.
+
+**Step 3 — Build the relational tables:**
+From the repo root:
+```bash
+python code/create_tables.py
+```
+This will generate all relational tables as CSV and parquet files in `data/relational/`.
+
+**Step 4 — Run the pipeline:**
+Open `code/pipeline_files/pipeline.ipynb` and run all cells from top to bottom. Make sure your working directory is set to the repo root, not the `pipeline_files/` folder, otherwise the relative file paths will not resolve correctly.
+
 ## Problem Definition
 
 **Initial General Problem**:
