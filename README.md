@@ -76,12 +76,12 @@ The use of synthetic data introduces uncertainty regarding how well the model wi
 
 | Table | Description | Link |
 |-------|-------------|------|
-| transactions | Core fact table containing all transaction records including sender, recipient, transaction type, amount, time step, and fraud label | [transactions.csv](https://myuva-my.sharepoint.com/:x:/g/personal/xtm9px_virginia_edu/IQAeuD-eNpRqSpw5K42VMXfCAXdi7Um2LRnREXlKQzsASPY?email=stefanregalia%40gmail.com&e=MBVfoN) |
-| accounts | Dimension table containing unique account IDs and their type (customer or merchant) | [accounts.csv](https://myuva-my.sharepoint.com/:x:/g/personal/xtm9px_virginia_edu/IQCC-GDckonESJ7yAjBtv7clAeskSzoCo2JzipKnJjNiG78?email=stefanregalia%40gmail.com&e=3GWQey) |
-| transaction_types | Lookup table mapping transaction type IDs to their names | [transaction_types.csv](https://myuva-my.sharepoint.com/:x:/g/personal/xtm9px_virginia_edu/IQCzlkqJ26QoRbcpZabk3FiIAYTGX_vY4lZJ4ZaSvdIjdck?email=stefanregalia%40gmail.com&e=g65NyD) |
-| time_steps | Dimension table mapping each simulation hour to its hour of day and day of month | [time_steps.csv](https://myuva-my.sharepoint.com/:x:/g/personal/xtm9px_virginia_edu/IQAl0lzioXyRSaT1drg4fR5wAQbtSImkQNXLoenYpQPSQCQ?email=stefanregalia%40gmail.com&e=tPGs6v) |
+| transactions | Core fact table containing all transaction records including sender, recipient, transaction type, amount, time step, and fraud label | [transactions.csv](https://myuva-my.sharepoint.com/:x:/g/personal/xtm9px_virginia_edu/IQAeuD-eNpRqSpw5K42VMXfCAS8Jtb-Qu2AzsZFgAbkdGCc?e=5arzuQ) |
+| accounts | Dimension table containing unique account IDs and their type (customer or merchant) | [accounts.csv](https://myuva-my.sharepoint.com/:x:/g/personal/xtm9px_virginia_edu/IQCC-GDckonESJ7yAjBtv7clAWURbm0VDtUtrfy3T9906fg?e=fyFXql) |
+| transaction_types | Lookup table mapping transaction type IDs to their names | [transaction_types.csv](https://myuva-my.sharepoint.com/:x:/g/personal/xtm9px_virginia_edu/IQCzlkqJ26QoRbcpZabk3FiIAfbNZd-_sYzBCiqicH_cGVE?e=64tTFe) |
+| time_steps | Dimension table mapping each simulation hour to its hour of day and day of month | [time_steps.csv](https://myuva-my.sharepoint.com/:x:/g/personal/xtm9px_virginia_edu/IQAl0lzioXyRSaT1drg4fR5wAYvxHZtHfbYtJZiuKNIewKI?e=VcoMuX) |
 
-All relational data can be found here: https://myuva-my.sharepoint.com/:f:/g/personal/xtm9px_virginia_edu/IgCoK6DBYXegSqoNcsr_CHx4ARM2WIf5gcOg3Dr6DDuTZOY?e=aHUC8N
+All relational data can be found here: https://myuva-my.sharepoint.com/:f:/g/personal/xtm9px_virginia_edu/IgCoK6DBYXegSqoNcsr_CHx4ARM2WIf5gcOg3Dr6DDuTZOY?e=WL7sF8
 
 | Name | Data Type | Description | Example |
 |------|-----------|-------------|---------|
