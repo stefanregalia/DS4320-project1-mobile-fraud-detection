@@ -24,7 +24,7 @@ DS4320-project1-mobile-fraud-detection/
 
 ## How to Run
 
-Download the PaySim dataset from https://www.kaggle.com/datasets/ealaxi/paysim1 and place the CSV in `data/raw/`. Update the `raw_path` variable in `code/create_tables.py` to match your filename. Then run `create_tables.py` from the repo root to generate the relational tables, and open `code/pipeline_files/pipeline.ipynb` to run the full pipeline.
+Download the PaySim dataset from https://www.kaggle.com/datasets/ealaxi/paysim1. Create a folder called `data/raw/` in the repo root and place the CSV inside it. Update the `raw_path` variable in `code/create_tables.py` to match your filename. Then run `create_tables.py` from the repo root to generate the relational tables, and open `code/pipeline_files/pipeline.ipynb` to run the full pipeline.
 
 ## Problem Definition
 
