@@ -4,6 +4,7 @@
 ```
 DS4320-project1-mobile-fraud-detection/
 ├── README.md
+├── requirements.txt             # Python dependencies
 ├── press_release.md
 ├── background_reading/          # Background reading articles
 ├── code/
@@ -25,7 +26,7 @@ DS4320-project1-mobile-fraud-detection/
 
 **Prerequisites:** Python 3.13 and the following packages:
 ```bash
-pip install pandas duckdb scikit-learn xgboost seaborn matplotlib
+pip install -r requirements.txt
 brew install libomp  # Mac only, required for XGBoost
 ```
 
@@ -38,9 +39,10 @@ cd DS4320-project1-mobile-fraud-detection
 **Step 2 — Download the raw data:**
 Download the PaySim dataset from https://www.kaggle.com/datasets/ealaxi/paysim1. Inside the downloaded zip folder you will find a CSV file named `PS_20174392719_1491204439457_log 2.csv`. Create a folder called `data/raw/` in the repo root and place the CSV file inside it.
 
-**Step 3 — Build the relational tables:**
+**Step 3 — Install dependencies and build the relational tables:**
 From the repo root:
 ```bash
+pip install -r requirements.txt
 python code/create_tables.py
 ```
 This will generate all relational tables as CSV and parquet files in `data/relational/`.
