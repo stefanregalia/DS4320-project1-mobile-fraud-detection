@@ -9,6 +9,7 @@ DS4320-project1-mobile-fraud-detection/
 ├── background_reading/          # Background reading articles
 ├── code/
 │   ├── create_tables.py         # Builds relational tables from raw data
+│   ├── press_release.ipynb      # Press release chart generation
 │   └── pipeline_files/
 │       ├── pipeline.ipynb       # Full analysis pipeline
 │       ├── pipeline.md          # Markdown export of pipeline
@@ -17,9 +18,11 @@ DS4320-project1-mobile-fraud-detection/
 ├── visualizations/
 │   ├── chart.png                # Press release chart
 │   └── erd.png                  # ER diagram
-└── data/                        # Gitignored: need to download (linked below)
-    ├── raw/                     # Raw PaySim CSV
-    └── relational/              # Relational tables (CSV and parquet)
+├── data/                        # Gitignored: Instructions below to run 
+│   ├── raw/                     # Raw PaySim CSV
+│   └── relational/              # Relational tables (CSV and parquet)
+├── .logs/                       # Gitignored: log files
+└── venv/                        # Gitignored: virtual environment
 ```
 
 ## How to Run
