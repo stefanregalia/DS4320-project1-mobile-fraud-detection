@@ -1,4 +1,18 @@
-# DS4320-project1-mobile-fraud-detection
+# DS 4320 Project 1: Mobile Payment Fraud Detection
+
+This repository contains a full data science pipeline for detecting fraudulent mobile payment transactions using the PaySim synthetic dataset. It includes a relational database of over 6 million transactions split across four normalized tables, a machine learning pipeline built with XGBoost and optimized via GridSearchCV with stratified k-fold cross-validation, and a press release communicating findings. The model achieves a recall of 91% on the test set, correctly identifying the majority of fraudulent transactions.
+
+Stefan Regalia - xtm9px
+
+**DOI** [![DOI](https://zenodo.org/badge/1185487571.svg)](https://doi.org/10.5281/zenodo.19324180)
+
+**Press Release:** [Machine Learning Model Detects Fraudulent Mobile Transactions](press_release.md)\
+
+**Data:** All relational data can be found here: https://myuva-my.sharepoint.com/:f:/g/personal/xtm9px_virginia_edu/IgCoK6DBYXegSqoNcsr_CHx4ARM2WIf5gcOg3Dr6DDuTZOY?e=WL7sF8
+
+**Pipeline:** [code/pipeline_files](code/pipeline_files)
+
+**License:** MIT License — [LICENSE](LICENSE)
 
 ## Repository Structure
 ```
@@ -109,8 +123,6 @@ The use of synthetic data introduces uncertainty regarding how well the model wi
 | accounts | Dimension table containing unique account IDs and their type (customer or merchant) | [accounts.csv](https://myuva-my.sharepoint.com/:x:/g/personal/xtm9px_virginia_edu/IQCC-GDckonESJ7yAjBtv7clAWURbm0VDtUtrfy3T9906fg?e=fyFXql) |
 | transaction_types | Lookup table mapping transaction type IDs to their names | [transaction_types.csv](https://myuva-my.sharepoint.com/:x:/g/personal/xtm9px_virginia_edu/IQCzlkqJ26QoRbcpZabk3FiIAfbNZd-_sYzBCiqicH_cGVE?e=64tTFe) |
 | time_steps | Dimension table mapping each simulation hour to its hour of day and day of month | [time_steps.csv](https://myuva-my.sharepoint.com/:x:/g/personal/xtm9px_virginia_edu/IQAl0lzioXyRSaT1drg4fR5wAYvxHZtHfbYtJZiuKNIewKI?e=VcoMuX) |
-
-All relational data can be found here: https://myuva-my.sharepoint.com/:f:/g/personal/xtm9px_virginia_edu/IgCoK6DBYXegSqoNcsr_CHx4ARM2WIf5gcOg3Dr6DDuTZOY?e=WL7sF8
 
 | Name | Data Type | Description | Example |
 |------|-----------|-------------|---------|
