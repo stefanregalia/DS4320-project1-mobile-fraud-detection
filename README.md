@@ -32,7 +32,7 @@ DS4320-project1-mobile-fraud-detection/
 ├── visualizations/
 │   ├── chart.png                # Press release chart
 │   └── erd.png                  # ER diagram
-├── data/                        # Gitignored: Instructions below to run 
+├── data/                        # Gitignored (Files too large for GitHub): Instructions below to run 
 │   ├── raw/                     # Raw PaySim CSV
 │   └── relational/              # Relational tables (CSV and parquet)
 ├── .logs/                       # Gitignored: log files
