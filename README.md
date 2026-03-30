@@ -4,11 +4,11 @@ This repository contains a full data science pipeline for detecting fraudulent m
 
 Stefan Regalia - xtm9px
 
-**DOI** [![DOI](https://zenodo.org/badge/1185487571.svg)](https://doi.org/10.5281/zenodo.19324180)
+[![DOI](https://zenodo.org/badge/1185487571.svg)](https://doi.org/10.5281/zenodo.19324180)
 
-**Press Release:** [Machine Learning Model Detects Fraudulent Mobile Transactions](press_release.md)\
+**Press Release:** [Machine Learning Model Detects Fraudulent Mobile Transactions](press_release.md)
 
-**Data:** All relational data can be found here: https://myuva-my.sharepoint.com/:f:/g/personal/xtm9px_virginia_edu/IgCoK6DBYXegSqoNcsr_CHx4ARM2WIf5gcOg3Dr6DDuTZOY?e=WL7sF8
+**Data:** [UVA OneDrive Data Folder](https://myuva-my.sharepoint.com/:f:/g/personal/xtm9px_virginia_edu/IgCoK6DBYXegSqoNcsr_CHx4ARM2WIf5gcOg3Dr6DDuTZOY?e=WL7sF8)
 
 **Pipeline:** [code/pipeline_files](code/pipeline_files)
 
