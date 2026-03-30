@@ -71,7 +71,7 @@ The motivation behind this project is to detect fraudulent mobile money transact
 
 ## Domain Exposition
 
-
+**Terminology Table**
 | Term | Definition |
 |------|------------|
 | Mobile Money (Contextual) | A financial service that allows users to store, send, and receive money using a mobile phone |
@@ -94,7 +94,7 @@ The motivation behind this project is to detect fraudulent mobile money transact
 
 This project lives at the intersection between the domains of financial technology, mobile payment systems, and machine learning. Mobile payment systems, such as Venmo and Zelle, are platforms where people can send money to others directly through their phones. Financial technology companies that run these platforms implement systems to track millions of these mobile transactions every day, which would be impossible to do manually. Machine learning solves this problem by identifying patterns in fraudulent activity so that these companies can mitigate fraud and take as many preventative actions as possible.
 
-
+**Background Reading**
 | Title | Description | Link |
 |-------|-------------|------|
 | PaySim: A Financial Mobile Money Simulator for Fraud Detection | Presents the PaySim simulator, describing how it generates synthetic mobile money transaction data based on real financial logs and injects fraudulent behavior for fraud detection research | https://github.com/stefanregalia/DS4320-project1-mobile-fraud-detection/blob/main/background_reading/PaySim.pdf |
@@ -109,7 +109,7 @@ The raw data used in this project is the PaySim Synthetic Dataset, titled "Synth
 
 To acquire this data, I visited the Kaggle URL listed above, clicking the "Download" button, and downloading the data as a zip folder. Inside the zip folder, I found the CSV file. Before splitting, balance-related columns were dropped to prevent data leakage, and three features were engineered: is_merchant (derived from the recipient ID prefix), hour_of_day (derived from step modulo 24), and day_of_month (derived from step divided by 24). The transformed data was then split into a relational database consisting of 4 tables: transactions, accounts, transaction_types, and time_steps.
 
-
+**Code**
 | File Name | Description | Link |
 |----------|------------|------|
 | create_tables.py | Loads raw PaySim data, removes data leakage-prone columns, engineers features, and constructs relational tables (transactions, accounts, transaction_types, time_steps) and saves them as CSV and parquet files| [create_tables.py](https://github.com/stefanregalia/DS4320-project1-mobile-fraud-detection/blob/main/code/create_tables.py) |
@@ -126,6 +126,7 @@ The use of synthetic data introduces uncertainty regarding how well the model wi
 
 ![ER Diagram](visualizations/erd.png)
 
+**Data Tables**
 | Table | Description | Link |
 |-------|-------------|------|
 | transactions | Core fact table containing all transaction records including sender, recipient, transaction type, amount, time step, and fraud label | [transactions.csv](https://myuva-my.sharepoint.com/:x:/g/personal/xtm9px_virginia_edu/IQAeuD-eNpRqSpw5K42VMXfCAS8Jtb-Qu2AzsZFgAbkdGCc?e=5arzuQ) |
@@ -133,6 +134,7 @@ The use of synthetic data introduces uncertainty regarding how well the model wi
 | transaction_types | Lookup table mapping transaction type IDs to their names | [transaction_types.csv](https://myuva-my.sharepoint.com/:x:/g/personal/xtm9px_virginia_edu/IQCzlkqJ26QoRbcpZabk3FiIAfbNZd-_sYzBCiqicH_cGVE?e=64tTFe) |
 | time_steps | Dimension table mapping each simulation hour to its hour of day and day of month | [time_steps.csv](https://myuva-my.sharepoint.com/:x:/g/personal/xtm9px_virginia_edu/IQAl0lzioXyRSaT1drg4fR5wAYvxHZtHfbYtJZiuKNIewKI?e=VcoMuX) |
 
+**Data Dictionary**
 | Name | Data Type | Description | Example |
 |------|-----------|-------------|---------|
 | transaction_id (transactions) | INT | Unique identifier for each transaction, auto-generated | 1 |
@@ -150,6 +152,7 @@ The use of synthetic data introduces uncertainty regarding how well the model wi
 | hour_of_day (time_steps) | INT | Hour within a 24-hour cycle, derived from step modulo 24 | 1 |
 | day_of_month (time_steps) | INT | Day within the 31-day simulation, derived by integer division of step by 24 (0–30 range due to zero-based indexing) | 1 |
 
+**Quantification of Uncertainty for Numerical Features**
 | Feature | Table | Mean | Std Dev | Min | Max | Missing | Interpretation |
 |---------|-------|------|---------|-----|-----|---------|----------------|
 | amount (transactions) | transactions | 179,861.90 | 603,858.23 | 0.00 | 92,445,516.64 | 0 | Highly skewed distribution with a large standard deviation, indicating most transactions are small but a few are extremely large |
